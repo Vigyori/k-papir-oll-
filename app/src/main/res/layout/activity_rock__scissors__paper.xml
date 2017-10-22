@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.david.rock_scissors_paper.Rock_Scissors_Paper">
+
+    <ImageView
+        android:id ="@+id/imageView_human"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:background="@drawable/paper"
+        tools:layout_editor_absoluteX="79dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/imageView_robot"
+        android:layout_alignStart="@+id/imageView_robot"
+        android:layout_marginTop="20dp" />
+
+    <ImageView
+        android:id ="@+id/imageView_robot"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:background="@drawable/rock"
+        tools:layout_editor_absoluteY="268dp"
+        tools:layout_editor_absoluteX="79dp"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A te választásod"
+        android:layout_below="@+id/imageView_human"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp" />
+
+    <TextView
+        android:id="@+id/textView_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eredmény:Ember:0 Computer 0"
+        android:layout_above="@+id/button_rock"
+        android:layout_alignLeft="@+id/imageView_robot"
+        android:layout_alignStart="@+id/imageView_robot"
+        android:layout_marginBottom="83dp" />
+
+    <Button
+        android:id="@+id/button_rock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="55dp"
+        android:text="Kő"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/button_paper"
+        android:layout_toStartOf="@+id/button_paper" />
+
+    <Button
+        android:id="@+id/button_paper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Papir"
+        android:layout_below="@+id/textView_score"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/button_scissors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Olló"
+        android:layout_below="@+id/textView_score"
+        android:layout_toRightOf="@+id/button_paper"
+        android:layout_toEndOf="@+id/button_paper" />
+
+
+</RelativeLayout>
