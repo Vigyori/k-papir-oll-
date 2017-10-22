@@ -1,0 +1,1 @@
+kő,papir,olló
